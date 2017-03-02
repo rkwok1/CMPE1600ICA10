@@ -1,0 +1,12 @@
+C:\Users\rkwok1\Documents\GitHub\CMPE1600ICA10\CMPE1600ICA10\bin\Debug\CMPE1600ICA10.exe.config
+C:\Users\rkwok1\Documents\GitHub\CMPE1600ICA10\CMPE1600ICA10\bin\Debug\CMPE1600ICA10.exe
+C:\Users\rkwok1\Documents\GitHub\CMPE1600ICA10\CMPE1600ICA10\bin\Debug\CMPE1600ICA10.pdb
+C:\Users\rkwok1\Documents\GitHub\CMPE1600ICA10\CMPE1600ICA10\bin\Debug\GDIDrawer.dll
+C:\Users\rkwok1\Documents\GitHub\CMPE1600ICA10\CMPE1600ICA10\obj\Debug\CMPE1600ICA10.Color.resources
+C:\Users\rkwok1\Documents\GitHub\CMPE1600ICA10\CMPE1600ICA10\obj\Debug\CMPE1600ICA10.MainForm.resources
+C:\Users\rkwok1\Documents\GitHub\CMPE1600ICA10\CMPE1600ICA10\obj\Debug\CMPE1600ICA10.Properties.Resources.resources
+C:\Users\rkwok1\Documents\GitHub\CMPE1600ICA10\CMPE1600ICA10\obj\Debug\CMPE1600ICA10.csproj.GenerateResource.Cache
+C:\Users\rkwok1\Documents\GitHub\CMPE1600ICA10\CMPE1600ICA10\obj\Debug\CMPE1600ICA10.exe
+C:\Users\rkwok1\Documents\GitHub\CMPE1600ICA10\CMPE1600ICA10\obj\Debug\CMPE1600ICA10.pdb
+C:\Users\rkwok1\Documents\GitHub\CMPE1600ICA10\CMPE1600ICA10\obj\Debug\CMPE1600ICA10.csprojResolveAssemblyReference.cache
+C:\Users\rkwok1\Documents\GitHub\CMPE1600ICA10\CMPE1600ICA10\obj\Debug\CMPE1600ICA10.Size.resources
