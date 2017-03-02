@@ -45,6 +45,7 @@
             this.UI_CheckBox_ShowColorDialog.TabIndex = 2;
             this.UI_CheckBox_ShowColorDialog.Text = "Show Color Dialog";
             this.UI_CheckBox_ShowColorDialog.UseVisualStyleBackColor = true;
+            this.UI_CheckBox_ShowColorDialog.CheckedChanged += new System.EventHandler(this.UI_CheckBox_ShowColorDialog_CheckedChanged);
             // 
             // UI_CheckBox_ShowSizeDialog
             // 
@@ -55,6 +56,7 @@
             this.UI_CheckBox_ShowSizeDialog.TabIndex = 3;
             this.UI_CheckBox_ShowSizeDialog.Text = "Show Size Dialog";
             this.UI_CheckBox_ShowSizeDialog.UseVisualStyleBackColor = true;
+            this.UI_CheckBox_ShowSizeDialog.CheckedChanged += new System.EventHandler(this.UI_CheckBox_ShowSizeDialog_CheckedChanged);
             // 
             // UI_Label_DrawingColor
             // 
