@@ -16,7 +16,8 @@ namespace CMPE1600ICA10
         CDrawer drawSpace = new CDrawer();
         ColorDialog dialogColor = null;
         Size dialogSize = null;
-        Color drawingColor;
+        Color drawingColor = Color.White;
+        int drawingSize = 10;
         public MainForm()
         {
             InitializeComponent();
@@ -64,13 +65,15 @@ namespace CMPE1600ICA10
         //Draws within a timer
         private void timer1_Tick(object sender, EventArgs e)
         {
-            Draw();
+                Draw();
         }
+       
         ////////////////////////////////////////////////Methods\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         
         //Callback from delegate for the size of a circle
         public void CallSize(int i)
         {
+            drawingSize = i;
             UI_Label_CircleSize0.Text = i.ToString();
         }
         //Callback for delegate of color variation
@@ -91,6 +94,11 @@ namespace CMPE1600ICA10
         }
         
         //Draw
-
+        public void Draw()
+        {
+            Point Coor;
+            if (drawSpace.GetLastMouseLeftClick(out Coor))
+            drawSpace.AddEllipse(Coor.X, Coor.Y, drawingSize, drawingSize, drawingColor);
+        }
     }
 }
