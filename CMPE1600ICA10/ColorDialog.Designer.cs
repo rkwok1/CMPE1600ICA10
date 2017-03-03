@@ -1,6 +1,6 @@
 ﻿namespace CMPE1600ICA10
 {
-    partial class Color
+    partial class ColorDialog
     {
         /// <summary>
         /// Required designer variable.
@@ -88,28 +88,37 @@
             // UI_TrackBar_Color_Red
             // 
             this.UI_TrackBar_Color_Red.Location = new System.Drawing.Point(12, 58);
+            this.UI_TrackBar_Color_Red.Maximum = 255;
             this.UI_TrackBar_Color_Red.Name = "UI_TrackBar_Color_Red";
             this.UI_TrackBar_Color_Red.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.UI_TrackBar_Color_Red.Size = new System.Drawing.Size(45, 123);
             this.UI_TrackBar_Color_Red.TabIndex = 5;
+            this.UI_TrackBar_Color_Red.TickFrequency = 10;
+            this.UI_TrackBar_Color_Red.Scroll += new System.EventHandler(this.UI_TrackBar_Color_Red_Scroll);
             // 
             // UI_TrackBar_Color_Green
             // 
             this.UI_TrackBar_Color_Green.Location = new System.Drawing.Point(81, 58);
+            this.UI_TrackBar_Color_Green.Maximum = 255;
             this.UI_TrackBar_Color_Green.Name = "UI_TrackBar_Color_Green";
             this.UI_TrackBar_Color_Green.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.UI_TrackBar_Color_Green.Size = new System.Drawing.Size(45, 123);
             this.UI_TrackBar_Color_Green.TabIndex = 6;
+            this.UI_TrackBar_Color_Green.TickFrequency = 10;
+            this.UI_TrackBar_Color_Green.Scroll += new System.EventHandler(this.UI_TrackBar_Color_Green_Scroll);
             // 
             // UI_TrackBar_Color_Blue
             // 
             this.UI_TrackBar_Color_Blue.Location = new System.Drawing.Point(151, 58);
+            this.UI_TrackBar_Color_Blue.Maximum = 255;
             this.UI_TrackBar_Color_Blue.Name = "UI_TrackBar_Color_Blue";
             this.UI_TrackBar_Color_Blue.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.UI_TrackBar_Color_Blue.Size = new System.Drawing.Size(45, 123);
             this.UI_TrackBar_Color_Blue.TabIndex = 7;
+            this.UI_TrackBar_Color_Blue.TickFrequency = 10;
+            this.UI_TrackBar_Color_Blue.Scroll += new System.EventHandler(this.UI_TrackBar_Color_Blue_Scroll);
             // 
-            // Color
+            // ColorDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,8 +132,9 @@
             this.Controls.Add(this.UI_Label_Color_Green);
             this.Controls.Add(this.UI_Label_Color_Red);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "Color";
+            this.Name = "ColorDialog";
             this.Text = "Color";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ColorDialog_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.UI_TrackBar_Color_Red)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UI_TrackBar_Color_Green)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UI_TrackBar_Color_Blue)).EndInit();

@@ -12,12 +12,13 @@ namespace CMPE1600ICA10
 {
     //Defining delegate type with void return and arguments
     public delegate void delVoidVoid();
-    public delegate int delVoidInt(int i);
+    public delegate void delVoidInt(int i);
     public partial class Size : Form
-    {//Global Variables
-    int sizeCircle;
+    {
+        //Global Variables
+    int sizeCircle = 0;
 
-        //
+        
         public delVoidVoid _dWindowHidden = null;
         public delVoidInt _dScrollBarChanged = null;
         public Size()

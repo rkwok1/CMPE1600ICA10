@@ -37,9 +37,12 @@
             // UI_TrackBar_Size_MaxMin
             // 
             this.UI_TrackBar_Size_MaxMin.Location = new System.Drawing.Point(12, 25);
+            this.UI_TrackBar_Size_MaxMin.Maximum = 100;
+            this.UI_TrackBar_Size_MaxMin.Minimum = 10;
             this.UI_TrackBar_Size_MaxMin.Name = "UI_TrackBar_Size_MaxMin";
             this.UI_TrackBar_Size_MaxMin.Size = new System.Drawing.Size(466, 45);
             this.UI_TrackBar_Size_MaxMin.TabIndex = 0;
+            this.UI_TrackBar_Size_MaxMin.Value = 10;
             this.UI_TrackBar_Size_MaxMin.Scroll += new System.EventHandler(this.UI_TrackBar_Size_MaxMin_Scroll);
             // 
             // Label_min
