@@ -32,6 +32,7 @@ namespace CMPE1600ICA10
 
                     dialogColor = new ColorDialog();
                     dialogColor._dColorChanged = new ColorDialog.delVoidIntIntInt(CallColor);
+                    dialogColor._dFormClosing = new ColorDialog.delVoidVoid(ColorClosed);
                 }
                 dialogColor.Show();
             }
@@ -39,6 +40,7 @@ namespace CMPE1600ICA10
             {
                 dialogColor.Hide();
             }
+
         }
         //Opens size dialog
         private void UI_CheckBox_ShowSizeDialog_CheckedChanged(object sender, EventArgs e)
@@ -49,6 +51,7 @@ namespace CMPE1600ICA10
                 {
                     dialogSize = new Size();
                     dialogSize._dScrollBarChanged = new delVoidInt(CallSize);
+                    dialogSize._dWindowHidden = new delVoidVoid(SizeClosed);
                 }
                 dialogSize.Show();
             }
@@ -70,6 +73,16 @@ namespace CMPE1600ICA10
         {
             drawingColor = Color.FromArgb(R, G, B);
             UI_Label_ColorBox.BackColor = Color.FromArgb(R, G, B);
+        }
+        //Closes color dialog and unchecks the box
+        public void ColorClosed()
+        {
+            UI_CheckBox_ShowColorDialog.Checked = false;
+        }
+        //Closes Size dialog and unchecks the box
+        public void SizeClosed()
+        {
+            UI_CheckBox_ShowSizeDialog.Checked = false;
         }
 
     }

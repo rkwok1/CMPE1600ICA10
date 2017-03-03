@@ -37,10 +37,18 @@ namespace CMPE1600ICA10
 
         private void Size_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(_dWindowHidden != null)
+            //is the dialo being closed by the user?
+            if(e.CloseReason == CloseReason.UserClosing)
             {
-                _dWindowHidden();
+                //CheckBox to ensure that the delegate reference has been initialized
+                if (null != _dWindowHidden)
+                {
+                    _dWindowHidden();
+                }
             }
+            //stop close from happening and hidesa it instead
+            e.Cancel = true;
+            Hide();
         }
     }
 }

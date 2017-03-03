@@ -57,10 +57,16 @@ namespace CMPE1600ICA10
         //Form is closing
         private void ColorDialog_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (_dFormClosing != null)
+            if (e.CloseReason == CloseReason.UserClosing)
             {
-                _dFormClosing();
+                if (_dFormClosing != null)
+                {
+                    _dFormClosing();
+                }
             }
+            e.Cancel = true;
+            Hide();
         }
+        
     }
 }
