@@ -61,6 +61,11 @@ namespace CMPE1600ICA10
                 dialogSize.Hide();
             }
         }
+        //Draws within a timer
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Draw();
+        }
         ////////////////////////////////////////////////Methods\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         
         //Callback from delegate for the size of a circle
@@ -84,6 +89,8 @@ namespace CMPE1600ICA10
         {
             UI_CheckBox_ShowSizeDialog.Checked = false;
         }
+        
+        //Draw
 
     }
 }

@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.UI_CheckBox_ShowColorDialog = new System.Windows.Forms.CheckBox();
             this.UI_CheckBox_ShowSizeDialog = new System.Windows.Forms.CheckBox();
             this.UI_Label_DrawingColor = new System.Windows.Forms.Label();
             this.UI_Label_CircleSize = new System.Windows.Forms.Label();
             this.UI_Label_ColorBox = new System.Windows.Forms.Label();
             this.UI_Label_CircleSize0 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // UI_CheckBox_ShowColorDialog
@@ -93,6 +95,11 @@
             this.UI_Label_CircleSize0.TabIndex = 7;
             this.UI_Label_CircleSize0.Text = "10";
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,6 +129,7 @@
         private System.Windows.Forms.Label UI_Label_CircleSize;
         private System.Windows.Forms.Label UI_Label_ColorBox;
         private System.Windows.Forms.Label UI_Label_CircleSize0;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
